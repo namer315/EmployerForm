@@ -20,10 +20,12 @@ namespace EmployerForm
             InitializeComponent();
         }
 
+        
         private void label1_Click(object sender, EventArgs e)
         {
             
         }
+
 
         private void groupBox3_Enter(object sender, EventArgs e)
         {
@@ -36,11 +38,14 @@ namespace EmployerForm
             loadEmployeeData();
         }
 
+
         private void button1_Click(object sender, EventArgs e)
         {
             loadEmployeeData();
         }
 
+        //For now I only code this part
+        //To display details that has entered on MsSql17 server
         private void loadEmployeeData()
         {
             NHibernate.ISession session = (NHibernate.ISession)SessionFactory.OpenSession;
